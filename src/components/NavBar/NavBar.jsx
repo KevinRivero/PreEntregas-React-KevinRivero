@@ -1,5 +1,6 @@
 import React from 'react'
 import { CartWidget } from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
   return (
@@ -20,10 +21,10 @@ export const NavBar = () => {
                   Comestibles
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Alfajores</a></li>
-                  <li><a className="dropdown-item" href="#">Caramelos</a></li>
-                  <li><a className="dropdown-item" href="#">Chicles</a></li>
-                  <li><a className="dropdown-item" href="#">Chocolates</a></li>
+                  <li><Link className="dropdown-item" to={"/category/alfajores"}>Alfajores</Link></li>
+                  <li><Link className="dropdown-item" to={"/category/caramelos"}>Caramelos</Link></li>
+                  <li><Link className="dropdown-item" to={"/category/chicles"}>Chicles</Link></li>
+                  <li><Link className="dropdown-item" to={"/category/chocolates"}>Chocolates</Link></li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
@@ -31,10 +32,10 @@ export const NavBar = () => {
                   Bebidas
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Gaseosas</a></li>
-                  <li><a className="dropdown-item" href="#">Cervezas</a></li>
-                  <li><a className="dropdown-item" href="#">Vinos</a></li>
-                  <li><a className="dropdown-item" href="#">Aguas y saborizados</a></li>
+                  <li><Link className="dropdown-item" to={"/category/gaseosas"}>Gaseosas</Link></li>
+                  <li><Link className="dropdown-item" to={"/category/cervezas"}>Cervezas</Link></li>
+                  <li><Link className="dropdown-item" to={"/category/vinos"}>Vinos</Link></li>
+                  <li><Link className="dropdown-item" to={"/category/aguas"}>Aguas y saborizados</Link></li>
                 </ul>
               </li>
             </ul>
