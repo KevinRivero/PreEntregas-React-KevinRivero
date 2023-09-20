@@ -7,14 +7,16 @@ export const ItemListContainer = ({}) => {
 
   const [item, setItem] = useState([])
   const {id} = useParams()
-
   let nn = []
+  console.log(id);
 
   useEffect(()=>{
-   nn = id ? products.filter(product => product.categoria === id) : products
+   nn = id != undefined ? products.filter(product => product.categoria === id) : products
+   console.log(nn);
     setItem(nn)
   },[id])
   
+
   return (
 
     <div className='container '>
