@@ -8,20 +8,30 @@ export const ItemListContainer = ({}) => {
 
   const [item, setItem] = useState([])
   const {id} = useParams()
-  let nn = []
-  console.log(id);
+ 
+  const fetchData = () => {
+    return new Promise((resolve, reject) => {
+
+      if(products.length === 0){
+        reject(new Error('No hay productos para mostrar'))
+      }
+      setTimeout(() => {
+        resolve(id ? products.filter(product => product.categoria === id) : products)
+      }, 500);
+    })
+  }
 
   useEffect(()=>{
-   nn = id != undefined ? products.filter(product => product.categoria === id) : products
-   console.log(nn);
-    setItem(nn)
+
+   fetchData()
+    .then(res => setItem(res))
+    .catch(rej => console.log(rej.message))
+
   },[id])
   
-
   return (
 
     <div className='container'>
-      <p>Esto se está ejecutando antes que el setTimeOut del useEffect</p>
       <ItemList item={item}/>
 </div>
   )

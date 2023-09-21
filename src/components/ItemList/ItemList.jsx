@@ -7,7 +7,7 @@ export const ItemList = ({ item }) => {
     <div>
       <div className='row row-cols-2 align-items-center justify-content-between'>
         {item.map((product) => {
-          return (<Item key={product.id} item={item} />
+          return (<Item key={product.id} product={product} />
           )
         })}
       </div>

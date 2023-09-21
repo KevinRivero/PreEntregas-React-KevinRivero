@@ -6,7 +6,7 @@
       "marca": "Milka",
       "categoria": "alfajores",
       "precio": 3.99,
-      "stock": 50,
+      "stock": 6,
       "oferta": true,
       "descripcion": "Delicioso alfajor triple con relleno de torta Oreo."
     },
@@ -17,7 +17,7 @@
       "marca": "Entre dos",
       "categoria": "alfajores",
       "precio": 2.49,
-      "stock": 30,
+      "stock": 10,
       "oferta": false,
       "descripcion": "Exquisito alfajor con relleno de dulce de leche negro."
     },
@@ -28,7 +28,7 @@
       "marca": "Georgalos",
       "categoria": "caramelos",
       "precio": 1.99,
-      "stock": 100,
+      "stock": 5,
       "oferta": false,
       "descripcion": "Caramelos Flynn Paff de la marca Georgalos."
     },
@@ -39,7 +39,7 @@
       "marca": "Arcor",
       "categoria": "caramelos",
       "precio": 1.79,
-      "stock": 80,
+      "stock": 3,
       "oferta": true,
       "descripcion": "Caramelos Fizz súper ácidos de la marca Arcor."
     },
@@ -50,7 +50,7 @@
       "marca": "Adams",
       "categoria": "chicles",
       "precio": 0.99,
-      "stock": 120,
+      "stock": 1,
       "oferta": true,
       "descripcion": "Chicles Bubbaloo de la marca Adams."
     },
@@ -61,7 +61,7 @@
       "marca": "Arcor",
       "categoria": "chicles",
       "precio": 0.89,
-      "stock": 90,
+      "stock": 15,
       "oferta": false,
       "descripcion": "Chicles Bazooka de la marca Arcor."
     },
@@ -72,7 +72,7 @@
       "marca": "Milka",
       "categoria": "chocolates",
       "precio": 4.49,
-      "stock": 40,
+      "stock": 5,
       "oferta": false,
       "descripcion": "Delicioso chocolate aireado de la marca Milka."
     },
@@ -83,7 +83,7 @@
       "marca": "Aguila",
       "categoria": "chocolates",
       "precio": 3.99,
-      "stock": 60,
+      "stock": 9,
       "oferta": true,
       "descripcion": "Chocolate Aguila amargo ideal para los amantes del chocolate negro."
     },
@@ -94,7 +94,7 @@
       "marca": "Pritty",
       "categoria": "gaseosas",
       "precio": 1.59,
-      "stock": 70,
+      "stock": 10,
       "oferta": true,
       "descripcion": "Gaseosa sabor limón Pritty en formato de 2,25 litros."
     },
@@ -105,7 +105,7 @@
       "marca": "Pritty",
       "categoria": "gaseosas",
       "precio": 2.29,
-      "stock": 55,
+      "stock": 3,
       "oferta": false,
       "descripcion": "Gaseosa cola doble en formato de 3 litros de la marca Pritty."
     },
@@ -116,7 +116,7 @@
       "marca": "Quilmes",
       "categoria": "cervezas",
       "precio": 2.99,
-      "stock": 25,
+      "stock": 4,
       "oferta": false,
       "descripcion": "Cerveza Quilmes clásica en formato de 1 litro."
     },
@@ -127,7 +127,7 @@
       "marca": "Miller",
       "categoria": "cervezas",
       "precio": 3.49,
-      "stock": 15,
+      "stock": 5,
       "oferta": true,
       "descripcion": "Cerveza Miller en formato de 1 litro."
     },
@@ -138,7 +138,7 @@
       "marca": "Toro",
       "categoria": "vinos",
       "precio": 8.99,
-      "stock": 20,
+      "stock": 6,
       "oferta": true,
       "descripcion": "Vino Toro en formato de 1 litro."
     },
@@ -149,7 +149,7 @@
       "marca": "Viñas de Balbo",
       "categoria": "vinos",
       "precio": 9.49,
-      "stock": 10,
+      "stock": 7,
       "oferta": false,
       "descripcion": "Vino Magnum de la marca Viñas de Balbo."
     },
@@ -160,7 +160,7 @@
       "marca": "San Remo",
       "categoria": "aguas",
       "precio": 0.99,
-      "stock": 100,
+      "stock": 8,
       "oferta": true,
       "descripcion": "Agua mineral San Remo en formato de 1,5 litros."
     },
@@ -171,7 +171,7 @@
       "marca": "Livra",
       "categoria": "aguas",
       "precio": 1.29,
-      "stock": 80,
+      "stock": 9,
       "oferta": false,
       "descripcion": "Agua saborizada Livra en formato de 1,5 litros."
     }
