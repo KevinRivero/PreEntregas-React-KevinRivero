@@ -82,9 +82,20 @@ const Checkout = () => {
     setEmail('')
     setEmailConfirmacion('')
     setMensaje('')
-    
+
   }
 
+  const handleClick = () => {
+    if (!nombre || !apellido || !telefono || !email || !emailConfirmacion){
+      console.log('Faltan campos por completar');
+      return ''
+    }
+    if (email !== emailConfirmacion) {
+      setError('Los email no coinciden')
+      return ''
+    }
+    removeList()
+  }
 
   if (greetings == false) {
     return (
@@ -114,7 +125,7 @@ const Checkout = () => {
                 <label htmlFor="emailConfirmacion" className="form-label">Confirmar email</label>
                 <input type="email" className="form-control" id="emailConfirmacion" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
               </div>
-              <button type="submit" className="btn btn-primary" onClick={removeList}>Terminar compra!</button>
+              <button type="submit" className="btn btn-primary" onClick={handleClick}>Terminar compra!</button>
             </div>
           </form>
         </div>

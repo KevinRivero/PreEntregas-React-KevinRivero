@@ -3,6 +3,7 @@ Utilicé Vite para crear el proyecto porque es más actual. También me gustarí
 --BOOTSTRAP--
 Utilicé Bootstrap en realidad para aprenderlo, mientras hacía este proyecto vi un curso y apliqué lo que fui aprendiendo. También para hacer un poco responsive pero al final no resultó como pensé
 
+*Pestaña de ofertas no quedó terminada, por lo que no tiene funcionalidad*
+
 Página en Vercel para ver el proyecto funcionando:
 
-git s
