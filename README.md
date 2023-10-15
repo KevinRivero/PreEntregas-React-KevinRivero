@@ -6,4 +6,4 @@ Utilicé Bootstrap en realidad para aprenderlo, mientras hacía este proyecto vi
 *Pestaña de ofertas no quedó terminada, por lo que no tiene funcionalidad*
 
 Página en Vercel para ver el proyecto funcionando:
-
+https://trabajo-integrador-kevin-rivero.vercel.app/
