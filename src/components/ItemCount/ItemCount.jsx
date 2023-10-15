@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
-export const ItemCount = ({stockProduct}) => {
 
-  const [counter, setCounter] = useState(1)
-  const [stock, setStock] = useState(stockProduct)
+export const ItemCount = ({stockProduct,initial, onAdd}) => {
+
+  const [counter, setCounter] = useState(initial)
+  
+
+  
 
   const incrementar = () => {
-    if (counter < stock) {
+    if (counter < stockProduct) {
       setCounter(counter + 1)
     }
   }
@@ -16,13 +19,16 @@ export const ItemCount = ({stockProduct}) => {
       setCounter(counter - 1)
     }
   }
+ 
 
   return (
     <div>
       <div className="btn-group" role="group" aria-label="Basic outlined example">
-        <button type="button" className="btn btn-outline-primary" onClick={decrementar}>-</button>
+        <button type="button" className="btn btn-outline-primary" disabled={counter<=1} onClick={decrementar}>-</button>
         <button type="button" className="btn btn-outline-primary">{counter}</button>
         <button type="button" className="btn btn-outline-primary" onClick={incrementar}>+</button>
+        <button type="button" disabled={counter>0 ? false : true} className="btn btn-primary addCart" onClick={() => onAdd(counter)} >Agregar al Carrito</button>
+        
       </div>
     </div>
   )

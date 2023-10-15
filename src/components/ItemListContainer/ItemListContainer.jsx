@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import products from '../../../products.json'
 import { ItemList } from '../ItemList/ItemList';
+import {getFirestore, collection, getDocs, where, query, getDoc} from 'firebase/firestore'
 import './ItemListContainer.css'
 
 export const ItemListContainer = ({}) => {
@@ -9,23 +9,18 @@ export const ItemListContainer = ({}) => {
   const [item, setItem] = useState([])
   const {id} = useParams()
  
-  const fetchData = () => {
-    return new Promise((resolve, reject) => {
-
-      if(products.length === 0){
-        reject(new Error('No hay productos para mostrar'))
-      }
-      setTimeout(() => {
-        resolve(id ? products.filter(product => product.categoria === id) : products)
-      }, 500);
-    })
-  }
-
+  
   useEffect(()=>{
 
-   fetchData()
-    .then(res => setItem(res))
-    .catch(rej => console.log(rej.message))
+    const queryDb = getFirestore()
+    const queryCollection = collection(queryDb, 'items')
+    if(id){
+      const queryFilter = query(queryCollection, where('categoria', '==', id))
+      getDocs(queryFilter).then((res) => setItem(res.docs.map(product => ({id:product.id, ...product.data()}))))
+    }else{
+      getDocs(queryCollection).then((res) => setItem(res.docs.map(product => ({id:product.id, ...product.data()}))))
+    }
+  
 
   },[id])
   

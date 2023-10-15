@@ -1,0 +1,30 @@
+.checkout-final{
+    display: flex;
+    justify-content: center;
+    top: 75px;
+}
+.subContainer{
+    width: 60%;
+    position: relative;
+    top: 75px;
+    background-color: white;
+}
+
+.formControl{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+
+.inputs{
+    width: 60%;
+}
+
+.subContainer h2{
+    margin-bottom: 50px;
+}
+
+.titulo-h2 {
+    margin-bottom: 10px!important;
+}

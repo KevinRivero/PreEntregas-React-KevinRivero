@@ -1,10 +1,16 @@
 import React from 'react'
 import { CartWidget } from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
+import "./NavBar.css"
+import { useCartContext } from '../Context/CartContext';
 
 export const NavBar = () => {
+ 
+
+  const {cart} = useCartContext()
+
   return (
-    <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg bg-dark container-fluid navegacion" data-bs-theme="dark">
         <div className="container-lg">
           <Link className="navbar-brand" to={'/'}>Kiosko online</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,13 +45,7 @@ export const NavBar = () => {
                 </ul>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-              <button className="btn btn-outline-success" type="submit">Buscar</button>
-              <div className='ms-2'>
-              <CartWidget cantidadItems={99}/>
-              </div>
-            </form>
+            {cart.length !== 0 ? <Link to={'/cart'}><CartWidget/></Link> : ''}
           </div>
         </div>
       </nav>

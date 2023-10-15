@@ -2,8 +2,22 @@
     width: 48%;
     height: 15rem;
     text-decoration: none;
+    }
+
+.imgContenedor{
+    width: 30%;
+    height: 100%;
 }
 
-img{
+.listImg{
+    object-fit: contain;
+    height: 100%!important;
+}
 
+.precio{
+    font-size: 20px;}
+
+
+.contenedor{
+    height: 100%;
 }

@@ -1,0 +1,6 @@
+.navegacion{
+    height: 100px!important;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}

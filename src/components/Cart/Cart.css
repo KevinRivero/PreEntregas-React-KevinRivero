@@ -1,0 +1,50 @@
+.contenedorProducts{
+    flex-direction: column;
+    width: 70%;
+}
+
+.contenedorTotal{
+    width: 25%;
+    flex-direction: column;
+    margin-top: 74px;
+    margin-left: 20px;
+    padding: 20px!important;
+    height: 250px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.resume{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.total{
+    font-size: 20px;
+}
+.resume-total{
+    font-weight: bold;
+}
+.resume-clean{
+    cursor: pointer;
+    color: grey;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.carrito-vacio{
+    display: flex;
+    flex-direction: column;
+    margin-top: 74px;
+    align-items: center;
+}
+
+.carrito-vacio p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.carrito-button{
+    width: 200px;
+}

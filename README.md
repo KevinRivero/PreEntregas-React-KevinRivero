@@ -1,8 +1,8 @@
-# React + Vite
+Utilicé Vite para crear el proyecto porque es más actual. También me gustaría aprender más en profundidad sobre Vite en un futuro y me gustaría aprovechar este proyecto para hacerlo.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+--BOOTSTRAP--
+Utilicé Bootstrap en realidad para aprenderlo, mientras hacía este proyecto vi un curso y apliqué lo que fui aprendiendo. También para hacer un poco responsive pero al final no resultó como pensé
 
-Currently, two official plugins are available:
+Página en Vercel para ver el proyecto funcionando:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+git s

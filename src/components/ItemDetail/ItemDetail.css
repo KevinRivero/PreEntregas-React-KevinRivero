@@ -1,11 +1,68 @@
 .tittle{
     font-size: 30px;
 }
+
+.container{
+    top: 75px;
+}
  
 .price{
-    font-size: 50px;
+    font-size: 50px!important;
+    margin-bottom: 50px;
+    
 }
 
 .fondo{
     background-color: white;
+}
+
+.contenedor-imagen{
+    justify-content: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.imagen-principal{
+    width: 80%;
+    height: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    object-fit: contain;
+}
+
+.btncomprar{
+    margin-top: 15px;
+    width: 200px;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .fondo{
+        flex-direction: column;
+    }
+
+    .descripcion{
+        position: relative;
+        top: -80px;
+    }
+    .tittle{
+        position: absolute;
+        top: -300px;
+    }
+    .contenedor-imagen{
+        width: 100%;
+    }
+
+    .imagen-principal{
+        width: 80%;
+        object-fit:contain;
+    }
 }
